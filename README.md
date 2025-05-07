@@ -171,7 +171,7 @@ You need to manually restore them in order to start the recovered PostgreSQL ins
 Recovery completed (start time: 2025-05-07 14:47:50.180426+03:00, elapsed time: 8 seconds)
 Your PostgreSQL server has been successfully prepared for recovery!
 ```
-НА node1 перезапускаем postgresql и смотрим убедимся что базульки восстановлены:
+НА node1 перезапускаем postgresql и убедимся что базульки восстановлены:
 ```
 postgres=# \l
                                                  List of databases
