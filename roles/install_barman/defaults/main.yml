@@ -1,0 +1,7 @@
+---
+master_ip: "{{ hostvars['node1']['ansible_host'] }}"
+master_user: 'postgres'
+barman_ip: "{{ hostvars['barman']['ansible_host'] }}"
+barman_user: 'barman'
+barman_user_password: 'Otus2022!'
+

@@ -1,0 +1,12 @@
+---
+#Запуск роли install_barman на всех хостах
+- name: set up backup
+  hosts: all
+  become: yes
+  pre_tasks:
+  - name: Rename hostanme
+    ansible.builtin.hostname:
+      name: '{{ inventory_hostname }}'
+      use: systemd
+  roles:
+   - install_barman

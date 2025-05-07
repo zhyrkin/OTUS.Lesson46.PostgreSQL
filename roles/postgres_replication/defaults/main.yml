@@ -1,0 +1,5 @@
+---
+# defaults file for postgres_replicationz
+replicator_password: 'Otus2022!'
+master_ip: "{{ hostvars['node1']['ansible_host'] }}"
+slave_ip: "{{ hostvars['node2']['ansible_host'] }}"

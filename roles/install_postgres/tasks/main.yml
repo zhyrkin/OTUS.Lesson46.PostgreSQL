@@ -1,0 +1,14 @@
+---  
+- name: install postgresql-server
+  ansible.builtin.apt: 
+    name: 
+      - postgresql
+      - postgresql-contrib
+    state: present
+    update_cache: true
+  
+- name: enable and start service
+  ansible.builtin.service:
+    name: postgresql
+    state: started
+    enabled: true

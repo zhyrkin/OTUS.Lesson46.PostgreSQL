@@ -1,0 +1,4 @@
+
+node1 ansible_host=10.200.3.95
+node2 ansible_host=10.200.3.96 
+barman ansible_host=10.200.3.97
